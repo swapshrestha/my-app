@@ -13,45 +13,36 @@ function App() {
   const [titleCounts, setTitleCounts] = useState({});
 
  useEffect(() => {
-  const url = "https://www.ecfr.gov/api/admin/v1/agencies.json";
-  fetch("https://corsproxy.io/?" + encodeURIComponent(url))
-  .then((res) => res.json())
-  .then((data) => {
-    setAgencies(data.agencies || []);
-  })
-  .catch((err) => console.error("Error fetching agencies:", err));
+  fetch("http://localhost:4000/api/agents")
+    .then((res) => res.json())
+    .then((data) => {
+      setAgencies(data.agencies || []);
+    })
+    .catch((err) => console.error("Error fetching agencies:", err));
  }, []);
 
   const fetchAgencyData = (agencySlug, term, childSlug = null) => {
-    let baseUrl = `https://www.ecfr.gov/api/search/v1/count?agency_slugs%5B%5D=${childSlug ? childSlug : agencySlug}`;
-    if (term && term.trim() !== "") {
-      baseUrl += `&query=${encodeURIComponent(term)}`;
-    }
-    fetch("https://corsproxy.io/?" + encodeURIComponent(baseUrl))
+    const params = new URLSearchParams();
+    params.append('agency', agencySlug);
+    if (childSlug) params.append('child', childSlug);
+    if (term && term.trim() !== "") params.append('query', term);
+
+    fetch(`http://localhost:4000/api/search/count?${params.toString()}`)
       .then((res) => res.json())
       .then((data) => {
-        setwordCount(data.meta.total_count || []);
-        setdescription(data.meta.description || "");
+        setwordCount(data.meta?.total_count || []);
+        setdescription(data.meta?.description || "");
       })
       .catch((err) => console.error("Error fetching count:", err));
 
-    let dailyUrl = `https://www.ecfr.gov/api/search/v1/counts/daily?agency_slugs%5B%5D=${childSlug ? childSlug : agencySlug}`;
-    if (term && term.trim() !== "") {
-      dailyUrl += `&query=${encodeURIComponent(term)}`;
-    }
-    fetch("https://corsproxy.io/?" + encodeURIComponent(dailyUrl))
+    fetch(`http://localhost:4000/api/search/daily?${params.toString()}`)
       .then((res) => res.json())
       .then((data) => {
         setdailyCount(data.dates || []);
       })
       .catch((err) => console.error("Error fetching daily count:", err));
 
-    // Fetch count per title
-    let titleUrl = `https://www.ecfr.gov/api/search/v1/counts/titles?agency_slugs%5B%5D=${childSlug ? childSlug : agencySlug}`;
-    if (term && term.trim() !== "") {
-      titleUrl += `&query=${encodeURIComponent(term)}`;
-    }
-    fetch("https://corsproxy.io/?" + encodeURIComponent(titleUrl))
+    fetch(`http://localhost:4000/api/search/titles?${params.toString()}`)
       .then((res) => res.json())
       .then((data) => {
         setTitleCounts(data.titles || {});
@@ -105,7 +96,7 @@ function App() {
           marginBottom: "2rem",
           fontWeight: 700,
           letterSpacing: "0.02em"
-        }}>ECFR Dashboard</h1>
+        }}>eCFR Dashboard</h1>
 
         <form onSubmit={handleSearch} style={{ marginBottom: "1.5rem", display: "flex", alignItems: "center", justifyContent: "center", gap: "0.5rem" }}>
           <select
@@ -217,6 +208,7 @@ function App() {
             </div>
             <div style={{ minWidth: 350, flex: 1 }}>
               <p><strong>Count Per Title</strong></p>
+              <p>Sum counts: {typeof titleCounts === 'object' && titleCounts !== null ? Object.values(titleCounts).reduce((sum, v) => sum + (typeof v === 'number' ? v : 0), 0) : 0}</p>
               <TitleCountChart titleCounts={titleCounts} />
             </div>
           </div>

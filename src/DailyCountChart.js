@@ -28,7 +28,6 @@ export default function DailyCountChart({ dailyCount }) {
 
   const labels = Object.keys(dailyCount).sort();
   const data = labels.map((date) => dailyCount[date]);
-  console.log(data);
 
   const chartData = {
     labels,
