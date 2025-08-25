@@ -177,6 +177,6 @@ app.post('/api/upload-activity', upload.single('image'), (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`Backend API running on port ${PORT}`);
 });
