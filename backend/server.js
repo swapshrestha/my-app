@@ -1,14 +1,29 @@
 const cors = require('cors');
-
 const fetch = require('node-fetch');
-
+const multer = require('multer');
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
 const bodyParser = require('body-parser');
 
+// Multer setup for image uploads
+const imageStorage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, path.join(__dirname, 'images'));
+  },
+  filename: function (req, file, cb) {
+    // Use original name or timestamped name
+    const ext = path.extname(file.originalname);
+    const base = path.basename(file.originalname, ext);
+    cb(null, base + '-' + Date.now() + ext);
+  }
+});
+const upload = multer({ storage: imageStorage });
 const app = express();
 const PORT = process.env.PORT || 4000;
+
+// Serve static images from /images
+app.use('/images', express.static(path.join(__dirname, 'images')));
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -107,6 +122,60 @@ app.get('/api/search/titles', async (req, res) => {
   }
 });
 
+
+// Proxy endpoint to get activities from eCFR and store locally
+app.get('/api/activities', async (req, res) => {
+  try {
+    const filePath = path.join(__dirname, 'data', 'activities.json');
+    fs.readFile(filePath, 'utf8', (err, content) => {
+      if (err) {
+        return res.status(500).json({ error: 'Failed to read local activities file' });
+      }
+      try {
+        const data = JSON.parse(content);
+        return res.json(data);
+      } catch (e) {
+        return res.status(500).json({ error: 'Invalid JSON in local activities file' });
+      }
+    });
+
+  } catch (err) {
+    res.status(500).json({ error: 'Error fetching activities', details: err.message });
+  }
+});
+
+
+// Endpoint to upload image and metadata
+app.post('/api/upload-activity', upload.single('image'), (req, res) => {
+  try {
+    const filePath = path.join(__dirname, 'data', 'activities.json');
+    const metadata = req.body;
+    const file = req.file;
+    if (!file) {
+      return res.status(400).json({ error: 'No image file uploaded' });
+    }
+    // Add image path to metadata
+    metadata.imageUrl = `/images/${file.filename}`;
+
+    // Read existing activities
+    let activities = [];
+    if (fs.existsSync(filePath)) {
+      try {
+        const content = fs.readFileSync(filePath, 'utf8');
+        activities = JSON.parse(content);
+        if (!Array.isArray(activities)) activities = [];
+      } catch (e) {
+        activities = [];
+      }
+    }
+    // Add new activity
+    activities.push(metadata);
+    fs.writeFileSync(filePath, JSON.stringify(activities, null, 2));
+    res.json({ message: 'Activity uploaded', activity: metadata });
+  } catch (err) {
+    res.status(500).json({ error: 'Error uploading activity', details: err.message });
+  }
+});
 
 app.listen(PORT, () => {
   console.log(`Backend API running on port ${PORT}`);
