@@ -177,6 +177,26 @@ app.post('/api/upload-activity', upload.single('image'), (req, res) => {
   }
 });
 
+app.get('/api/users', async (req, res) => {
+  try {
+    const filePath = path.join(__dirname, 'data', 'users.json');
+    fs.readFile(filePath, 'utf8', (err, content) => {
+      if (err) {
+        return res.status(500).json({ error: 'Failed to read local users file' });
+      }
+      try {
+        const data = JSON.parse(content);
+        return res.json(data);
+      } catch (e) {
+        return res.status(500).json({ error: 'Invalid JSON in local users file' });
+      }
+    });
+
+  } catch (err) {
+    res.status(500).json({ error: 'Error fetching users', details: err.message });
+  }
+});
+
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`Backend API running on port ${PORT}`);
 });
