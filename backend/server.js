@@ -5,6 +5,7 @@ const express = require('express');
 const fs = require('fs');
 const path = require('path');
 const bodyParser = require('body-parser');
+const crypto = require('crypto');
 
 // Multer setup for image uploads
 const imageStorage = multer.diskStorage({
@@ -212,16 +213,16 @@ app.get('/api/chat/messages', (req, res) => {
 
 app.post('/api/chat/messages', (req, res) => {
   const { text, user, room = 'general' } = req.body;
-  const message = { id: Date.now(), text, user, room, timestamp: new Date().toISOString() };
+  const message = { id: crypto.randomUUID(), text, user, room, timestamp: new Date().toISOString() };
   const filePath = path.join(__dirname, 'data', 'messages.json');
-  
+
   let messages = [];
   if (fs.existsSync(filePath)) {
     try {
       messages = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-    } catch (e) {}
+    } catch (e) { }
   }
-  
+
   messages.push(message);
   fs.writeFileSync(filePath, JSON.stringify(messages, null, 2));
   res.json(message);
