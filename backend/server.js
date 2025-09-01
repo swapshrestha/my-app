@@ -197,6 +197,48 @@ app.get('/api/users', async (req, res) => {
   }
 });
 
+// Chat endpoints
+app.get('/api/chat/messages', (req, res) => {
+  const filePath = path.join(__dirname, 'data', 'messages.json');
+  fs.readFile(filePath, 'utf8', (err, content) => {
+    if (err) return res.json([]);
+    try {
+      res.json(JSON.parse(content));
+    } catch (e) {
+      res.json([]);
+    }
+  });
+});
+
+app.post('/api/chat/messages', (req, res) => {
+  const { text, user, room = 'general' } = req.body;
+  const message = { id: Date.now(), text, user, room, timestamp: new Date().toISOString() };
+  const filePath = path.join(__dirname, 'data', 'messages.json');
+  
+  let messages = [];
+  if (fs.existsSync(filePath)) {
+    try {
+      messages = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+    } catch (e) {}
+  }
+  
+  messages.push(message);
+  fs.writeFileSync(filePath, JSON.stringify(messages, null, 2));
+  res.json(message);
+});
+
+app.get('/api/chat/rooms', (req, res) => {
+  const filePath = path.join(__dirname, 'data', 'rooms.json');
+  fs.readFile(filePath, 'utf8', (err, content) => {
+    if (err) return res.json(['general']);
+    try {
+      res.json(JSON.parse(content));
+    } catch (e) {
+      res.json(['general']);
+    }
+  });
+});
+
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`Backend API running on port ${PORT}`);
 });
