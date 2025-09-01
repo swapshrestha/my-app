@@ -4,699 +4,899 @@
     "name": "Elizabeth Garza",
     "email": "steven95@gmail.com",
     "role": "member",
-    "active": false
+    "active": false,
+    "phone": "(555) 123-4567",
+    "location": "New York, NY"
   },
   {
     "id": 2,
     "name": "Susan Snyder",
     "email": "warrensusan@yates-jones.com",
     "role": "viewer",
-    "active": false
+    "active": false,
+    "phone": "(555) 234-5678",
+    "location": "Los Angeles, CA"
   },
   {
     "id": 3,
     "name": "Juan Cook",
     "email": "xbanks@kramer.org",
     "role": "editor",
-    "active": false
+    "active": false,
+    "phone": "(555) 345-6789",
+    "location": "Chicago, IL"
   },
   {
     "id": 4,
     "name": "Mr. Bradley Whitehead",
     "email": "olane@lawrence-cantrell.org",
     "role": "editor",
-    "active": false
+    "active": false,
+    "phone": "(555) 456-7890",
+    "location": "Houston, TX"
   },
   {
     "id": 5,
     "name": "Heather Espinoza",
     "email": "hunterthomas@yahoo.com",
     "role": "admin",
-    "active": false
+    "active": false,
+    "phone": "(555) 567-8901",
+    "location": "Phoenix, AZ"
   },
   {
     "id": 6,
     "name": "Steven Smith",
     "email": "glasscathy@williams.org",
     "role": "editor",
-    "active": false
+    "active": false,
+    "phone": "(555) 678-9012",
+    "location": "Philadelphia, PA"
   },
   {
     "id": 7,
     "name": "Robert Contreras",
     "email": "bhayes@hotmail.com",
     "role": "admin",
-    "active": true
+    "active": true,
+    "phone": "(555) 789-0123",
+    "location": "San Antonio, TX"
   },
   {
     "id": 8,
     "name": "Warren West",
     "email": "tlogan@yahoo.com",
     "role": "admin",
-    "active": false
+    "active": false,
+    "phone": "(555) 890-1234",
+    "location": "San Diego, CA"
   },
   {
     "id": 9,
     "name": "Darren Escobar",
     "email": "chandlerdarren@yahoo.com",
     "role": "viewer",
-    "active": true
+    "active": true,
+    "phone": "(555) 901-2345",
+    "location": "Dallas, TX"
   },
   {
     "id": 10,
     "name": "Justin Rivera",
     "email": "brewerkimberly@hotmail.com",
     "role": "viewer",
-    "active": true
+    "active": true,
+    "phone": "(555) 012-3456",
+    "location": "San Jose, CA"
   },
   {
     "id": 11,
     "name": "Angela Brennan",
     "email": "swatson@moss.com",
     "role": "editor",
-    "active": true
+    "active": true,
+    "phone": "(555) 113-4567",
+    "location": "Austin, TX"
   },
   {
     "id": 12,
     "name": "Daniel Mcdonald",
     "email": "haneytony@gmail.com",
     "role": "editor",
-    "active": false
+    "active": false,
+    "phone": "(555) 224-5678",
+    "location": "Jacksonville, FL"
   },
   {
     "id": 13,
     "name": "Ashley Obrien",
     "email": "lopeztara@morales.com",
     "role": "editor",
-    "active": true
+    "active": true,
+    "phone": "(555) 335-6789",
+    "location": "Fort Worth, TX"
   },
   {
     "id": 14,
     "name": "Ryan Brown",
     "email": "martinjorge@becker-gray.info",
     "role": "editor",
-    "active": false
+    "active": false,
+    "phone": "(555) 446-7890",
+    "location": "Columbus, OH"
   },
   {
     "id": 15,
     "name": "Derek Hernandez",
     "email": "matthew90@allen-carter.org",
     "role": "member",
-    "active": false
+    "active": false,
+    "phone": "(555) 557-8901",
+    "location": "Charlotte, NC"
   },
   {
     "id": 16,
     "name": "Daniel Weaver",
     "email": "leedeanna@yahoo.com",
     "role": "member",
-    "active": true
+    "active": true,
+    "phone": "(555) 668-9012",
+    "location": "San Francisco, CA"
   },
   {
     "id": 17,
     "name": "Joshua Williams",
     "email": "gary76@carr.com",
     "role": "viewer",
-    "active": false
+    "active": false,
+    "phone": "(555) 779-0123",
+    "location": "Indianapolis, IN"
   },
   {
     "id": 18,
     "name": "Amanda Palmer",
     "email": "michael77@brown-rodriguez.com",
     "role": "admin",
-    "active": true
+    "active": true,
+    "phone": "(555) 880-1234",
+    "location": "Seattle, WA"
   },
   {
     "id": 19,
     "name": "Michelle Gonzales",
     "email": "gravesheather@villanueva.com",
     "role": "viewer",
-    "active": false
+    "active": false,
+    "phone": "(555) 991-2345",
+    "location": "Denver, CO"
   },
   {
     "id": 20,
     "name": "Raymond Thomas",
     "email": "vferrell@ferguson-hart.com",
     "role": "admin",
-    "active": true
+    "active": true,
+    "phone": "(555) 102-3456",
+    "location": "Washington, DC"
   },
   {
     "id": 21,
     "name": "Kendra Garcia",
     "email": "melissa59@fernandez.com",
     "role": "editor",
-    "active": true
+    "active": true,
+    "phone": "(555) 213-4567",
+    "location": "Boston, MA"
   },
   {
     "id": 22,
     "name": "Donna Carroll",
     "email": "nataliemelendez@bailey-howard.com",
     "role": "viewer",
-    "active": false
+    "active": false,
+    "phone": "(555) 324-5678",
+    "location": "El Paso, TX"
   },
   {
     "id": 23,
     "name": "Ian Krause",
     "email": "warren57@palmer.com",
     "role": "editor",
-    "active": false
+    "active": false,
+    "phone": "(555) 435-6789",
+    "location": "Detroit, MI"
   },
   {
     "id": 24,
     "name": "Mr. Darren Duncan",
     "email": "claire41@baird.com",
     "role": "editor",
-    "active": true
+    "active": true,
+    "phone": "(555) 546-7890",
+    "location": "Nashville, TN"
   },
   {
     "id": 25,
     "name": "Dalton Sanders",
     "email": "evansjennifer@castillo.net",
     "role": "admin",
-    "active": false
+    "active": false,
+    "phone": "(555) 657-8901",
+    "location": "Portland, OR"
   },
   {
     "id": 26,
     "name": "Brandon Lee",
     "email": "breanna16@gmail.com",
     "role": "viewer",
-    "active": false
+    "active": false,
+    "phone": "(555) 768-9012",
+    "location": "Oklahoma City, OK"
   },
   {
     "id": 27,
     "name": "Alicia Gomez",
     "email": "castrojames@hotmail.com",
     "role": "viewer",
-    "active": false
+    "active": false,
+    "phone": "(555) 879-0123",
+    "location": "Las Vegas, NV"
   },
   {
     "id": 28,
     "name": "Amanda Carpenter",
     "email": "kylelee@frazier.com",
     "role": "admin",
-    "active": true
+    "active": true,
+    "phone": "(555) 980-1234",
+    "location": "Louisville, KY"
   },
   {
     "id": 29,
     "name": "Nancy Green",
     "email": "bdalton@smith-carter.biz",
     "role": "viewer",
-    "active": false
+    "active": false,
+    "phone": "(555) 091-2345",
+    "location": "Baltimore, MD"
   },
   {
     "id": 30,
     "name": "Courtney White",
     "email": "sellersjose@gutierrez-johnson.com",
     "role": "member",
-    "active": true
+    "active": true,
+    "phone": "(555) 192-3456",
+    "location": "Milwaukee, WI"
   },
   {
     "id": 31,
     "name": "Darryl Dalton",
     "email": "kleinphillip@bowers.com",
     "role": "admin",
-    "active": true
+    "active": true,
+    "phone": "(555) 293-4567",
+    "location": "Albuquerque, NM"
   },
   {
     "id": 32,
     "name": "Brandi Jones",
     "email": "tiffany72@esparza-holmes.com",
     "role": "admin",
-    "active": true
+    "active": true,
+    "phone": "(555) 394-5678",
+    "location": "Tucson, AZ"
   },
   {
     "id": 33,
     "name": "Michael Bryant",
     "email": "myersamy@moore-pierce.net",
     "role": "member",
-    "active": true
+    "active": true,
+    "phone": "(555) 495-6789",
+    "location": "Fresno, CA"
   },
   {
     "id": 34,
     "name": "Kristen Melton",
     "email": "rebecca11@yahoo.com",
     "role": "viewer",
-    "active": false
+    "active": false,
+    "phone": "(555) 596-7890",
+    "location": "Sacramento, CA"
   },
   {
     "id": 35,
     "name": "Crystal Wagner",
     "email": "aking@hotmail.com",
     "role": "admin",
-    "active": false
+    "active": false,
+    "phone": "(555) 697-8901",
+    "location": "Long Beach, CA"
   },
   {
     "id": 36,
     "name": "Monique Dennis",
     "email": "baileynicholas@gmail.com",
     "role": "admin",
-    "active": true
+    "active": true,
+    "phone": "(555) 798-9012",
+    "location": "Kansas City, MO"
   },
   {
     "id": 37,
     "name": "Laura Contreras",
     "email": "kevin51@hotmail.com",
     "role": "viewer",
-    "active": true
+    "active": true,
+    "phone": "(555) 899-0123",
+    "location": "Mesa, AZ"
   },
   {
     "id": 38,
     "name": "Nicholas Powell",
     "email": "taylortimothy@wood.com",
     "role": "member",
-    "active": true
+    "active": true,
+    "phone": "(555) 900-1234",
+    "location": "Virginia Beach, VA"
   },
   {
     "id": 39,
     "name": "Jeffrey Martin",
     "email": "stoutdonald@scott.com",
     "role": "admin",
-    "active": false
+    "active": false,
+    "phone": "(555) 101-2345",
+    "location": "Atlanta, GA"
   },
   {
     "id": 40,
     "name": "Ronald Gomez",
     "email": "melissamaynard@yahoo.com",
     "role": "admin",
-    "active": true
+    "active": true,
+    "phone": "(555) 202-3456",
+    "location": "Colorado Springs, CO"
   },
   {
     "id": 41,
     "name": "Kristen Ramirez",
     "email": "madelineharris@gmail.com",
     "role": "admin",
-    "active": true
+    "active": true,
+    "phone": "(555) 303-4567",
+    "location": "Omaha, NE"
   },
   {
     "id": 42,
     "name": "Matthew Flowers MD",
     "email": "tking@martinez.net",
     "role": "viewer",
-    "active": true
+    "active": true,
+    "phone": "(555) 404-5678",
+    "location": "Raleigh, NC"
   },
   {
     "id": 43,
     "name": "Katherine Chapman",
     "email": "lindsey47@rodriguez.com",
     "role": "member",
-    "active": true
+    "active": true,
+    "phone": "(555) 505-6789",
+    "location": "Miami, FL"
   },
   {
     "id": 44,
     "name": "Nicholas Graham",
     "email": "jacobsmeghan@kirby.info",
     "role": "member",
-    "active": false
+    "active": false,
+    "phone": "(555) 606-7890",
+    "location": "Oakland, CA"
   },
   {
     "id": 45,
     "name": "Betty Davis",
     "email": "xbond@harris.com",
     "role": "member",
-    "active": false
+    "active": false,
+    "phone": "(555) 707-8901",
+    "location": "Minneapolis, MN"
   },
   {
     "id": 46,
     "name": "Caitlyn Hall",
     "email": "xstewart@yahoo.com",
     "role": "editor",
-    "active": false
+    "active": false,
+    "phone": "(555) 808-9012",
+    "location": "Tulsa, OK"
   },
   {
     "id": 47,
     "name": "Jacob Sanchez",
     "email": "paul36@farrell-barnes.org",
     "role": "admin",
-    "active": true
+    "active": true,
+    "phone": "(555) 909-0123",
+    "location": "Cleveland, OH"
   },
   {
     "id": 48,
     "name": "Gwendolyn Fowler",
     "email": "lovefelicia@hotmail.com",
     "role": "viewer",
-    "active": false
+    "active": false,
+    "phone": "(555) 010-1234",
+    "location": "Wichita, KS"
   },
   {
     "id": 49,
     "name": "Lisa Wood",
     "email": "bryanbush@hotmail.com",
     "role": "admin",
-    "active": false
+    "active": false,
+    "phone": "(555) 121-2345",
+    "location": "Arlington, TX"
   },
   {
     "id": 50,
     "name": "Kristie Hoffman",
     "email": "wilcoxtravis@gmail.com",
     "role": "admin",
-    "active": true
+    "active": true,
+    "phone": "(555) 232-3456",
+    "location": "New Orleans, LA"
   },
   {
     "id": 51,
     "name": "Justin Rodriguez",
     "email": "fbrown@bolton.com",
     "role": "editor",
-    "active": false
+    "active": false,
+    "phone": "(555) 343-4567",
+    "location": "Bakersfield, CA"
   },
   {
     "id": 52,
     "name": "Roberto Jarvis",
     "email": "kristin95@pope.info",
     "role": "member",
-    "active": true
+    "active": true,
+    "phone": "(555) 454-5678",
+    "location": "Tampa, FL"
   },
   {
     "id": 53,
     "name": "Darlene Johnson",
     "email": "marisa03@yahoo.com",
     "role": "admin",
-    "active": false
+    "active": false,
+    "phone": "(555) 565-6789",
+    "location": "Honolulu, HI"
   },
   {
     "id": 54,
     "name": "Crystal Johnson",
     "email": "amysmith@nash.com",
     "role": "viewer",
-    "active": false
+    "active": false,
+    "phone": "(555) 676-7890",
+    "location": "Aurora, CO"
   },
   {
     "id": 55,
     "name": "Christopher Smith",
     "email": "sherry50@yahoo.com",
     "role": "viewer",
-    "active": false
+    "active": false,
+    "phone": "(555) 787-8901",
+    "location": "Anaheim, CA"
   },
   {
     "id": 56,
     "name": "Anna Barron",
     "email": "james27@beltran-green.com",
     "role": "admin",
-    "active": true
+    "active": true,
+    "phone": "(555) 898-9012",
+    "location": "Santa Ana, CA"
   },
   {
     "id": 57,
     "name": "Thomas Daniels",
     "email": "beth79@yahoo.com",
     "role": "editor",
-    "active": true
+    "active": true,
+    "phone": "(555) 909-0123",
+    "location": "St. Louis, MO"
   },
   {
     "id": 58,
     "name": "Mark Williamson",
     "email": "jeffrey49@spencer.com",
     "role": "admin",
-    "active": true
+    "active": true,
+    "phone": "(555) 010-1234",
+    "location": "Riverside, CA"
   },
   {
     "id": 59,
     "name": "Maxwell Jones",
     "email": "jennifersalas@yahoo.com",
     "role": "viewer",
-    "active": true
+    "active": true,
+    "phone": "(555) 121-2345",
+    "location": "Corpus Christi, TX"
   },
   {
     "id": 60,
     "name": "Elizabeth Jones",
     "email": "baileysilva@powell-ramirez.com",
     "role": "viewer",
-    "active": false
+    "active": false,
+    "phone": "(555) 232-3456",
+    "location": "Lexington, KY"
   },
   {
     "id": 61,
     "name": "Jack Anderson",
     "email": "jacqueline00@jones-holden.biz",
     "role": "member",
-    "active": true
+    "active": true,
+    "phone": "(555) 343-4567",
+    "location": "Pittsburgh, PA"
   },
   {
     "id": 62,
     "name": "Jennifer Hodges",
     "email": "paullloyd@hotmail.com",
     "role": "editor",
-    "active": true
+    "active": true,
+    "phone": "(555) 454-5678",
+    "location": "Anchorage, AK"
   },
   {
     "id": 63,
     "name": "Laura Michael",
     "email": "jimmyhill@glover-myers.biz",
     "role": "member",
-    "active": true
+    "active": true,
+    "phone": "(555) 565-6789",
+    "location": "Stockton, CA"
   },
   {
     "id": 64,
     "name": "Brendan Mathews",
     "email": "petersingleton@gmail.com",
     "role": "editor",
-    "active": true
+    "active": true,
+    "phone": "(555) 676-7890",
+    "location": "Cincinnati, OH"
   },
   {
     "id": 65,
     "name": "Edward Johnson",
     "email": "smithvictoria@hotmail.com",
     "role": "editor",
-    "active": true
+    "active": true,
+    "phone": "(555) 787-8901",
+    "location": "St. Paul, MN"
   },
   {
     "id": 66,
     "name": "James Cook",
     "email": "laurentrevino@gmail.com",
     "role": "admin",
-    "active": false
+    "active": false,
+    "phone": "(555) 898-9012",
+    "location": "Toledo, OH"
   },
   {
     "id": 67,
     "name": "Laurie Gay",
     "email": "taylorking@garcia.info",
     "role": "viewer",
-    "active": false
+    "active": false,
+    "phone": "(555) 909-0123",
+    "location": "Newark, NJ"
   },
   {
     "id": 68,
     "name": "Selena Garcia",
     "email": "crawfordwendy@guzman-brown.com",
     "role": "viewer",
-    "active": false
+    "active": false,
+    "phone": "(555) 010-1234",
+    "location": "Greensboro, NC"
   },
   {
     "id": 69,
     "name": "Joshua Reed",
     "email": "marissa74@rosario-walton.com",
     "role": "editor",
-    "active": false
+    "active": false,
+    "phone": "(555) 121-2345",
+    "location": "Plano, TX"
   },
   {
     "id": 70,
     "name": "Crystal Burke",
     "email": "dennisalicia@gmail.com",
     "role": "member",
-    "active": false
+    "active": false,
+    "phone": "(555) 232-3456",
+    "location": "Henderson, NV"
   },
   {
     "id": 71,
     "name": "Erika Vaughn",
     "email": "myersyolanda@hotmail.com",
     "role": "viewer",
-    "active": false
+    "active": false,
+    "phone": "(555) 343-4567",
+    "location": "Lincoln, NE"
   },
   {
     "id": 72,
     "name": "Jill Alvarado",
     "email": "ryan78@marks.com",
     "role": "viewer",
-    "active": false
+    "active": false,
+    "phone": "(555) 454-5678",
+    "location": "Buffalo, NY"
   },
   {
     "id": 73,
     "name": "Joy Salazar",
     "email": "diazjeremy@rogers-bailey.com",
     "role": "member",
-    "active": false
+    "active": false,
+    "phone": "(555) 565-6789",
+    "location": "Jersey City, NJ"
   },
   {
     "id": 74,
     "name": "William Silva",
     "email": "morrischristina@hotmail.com",
     "role": "editor",
-    "active": false
+    "active": false,
+    "phone": "(555) 676-7890",
+    "location": "Chula Vista, CA"
   },
   {
     "id": 75,
     "name": "Benjamin Powers",
     "email": "sandra99@gmail.com",
     "role": "viewer",
-    "active": false
+    "active": false,
+    "phone": "(555) 787-8901",
+    "location": "Fort Wayne, IN"
   },
   {
     "id": 76,
     "name": "Thomas Henderson",
     "email": "carrie53@yahoo.com",
     "role": "admin",
-    "active": true
+    "active": true,
+    "phone": "(555) 898-9012",
+    "location": "Orlando, FL"
   },
   {
     "id": 77,
     "name": "Andrew George",
     "email": "wruiz@yahoo.com",
     "role": "editor",
-    "active": false
+    "active": false,
+    "phone": "(555) 909-0123",
+    "location": "Chandler, AZ"
   },
   {
     "id": 78,
     "name": "Shannon Perez",
     "email": "qrivera@smith.com",
     "role": "admin",
-    "active": false
+    "active": false,
+    "phone": "(555) 010-1234",
+    "location": "Laredo, TX"
   },
   {
     "id": 79,
     "name": "Anthony Rogers",
     "email": "zbrown@henderson.com",
     "role": "editor",
-    "active": true
+    "active": true,
+    "phone": "(555) 121-2345",
+    "location": "Madison, WI"
   },
   {
     "id": 80,
     "name": "Austin Gonzalez",
     "email": "washingtonjimmy@morris.biz",
     "role": "viewer",
-    "active": true
+    "active": true,
+    "phone": "(555) 232-3456",
+    "location": "Lubbock, TX"
   },
   {
     "id": 81,
     "name": "Scott Mitchell",
     "email": "katherinehumphrey@johnson.com",
     "role": "admin",
-    "active": true
+    "active": true,
+    "phone": "(555) 343-4567",
+    "location": "Baton Rouge, LA"
   },
   {
     "id": 82,
     "name": "Mary Lee",
     "email": "jimmy11@jones.com",
     "role": "viewer",
-    "active": true
+    "active": true,
+    "phone": "(555) 454-5678",
+    "location": "Durham, NC"
   },
   {
     "id": 83,
     "name": "Nathan Hess",
     "email": "sandraandersen@watson.com",
     "role": "member",
-    "active": false
+    "active": false,
+    "phone": "(555) 565-6789",
+    "location": "Garland, TX"
   },
   {
     "id": 84,
     "name": "Stacy Evans",
     "email": "amydavis@schaefer.com",
     "role": "viewer",
-    "active": true
+    "active": true,
+    "phone": "(555) 676-7890",
+    "location": "Glendale, AZ"
   },
   {
     "id": 85,
     "name": "Janet English",
     "email": "thomasmelissa@hotmail.com",
     "role": "member",
-    "active": true
+    "active": true,
+    "phone": "(555) 787-8901",
+    "location": "Hialeah, FL"
   },
   {
     "id": 86,
     "name": "Kristen Ponce",
     "email": "earlgreen@stafford.com",
     "role": "viewer",
-    "active": false
+    "active": false,
+    "phone": "(555) 898-9012",
+    "location": "Chesapeake, VA"
   },
   {
     "id": 87,
     "name": "Andrea Hubbard",
     "email": "karen75@smith-ashley.com",
     "role": "editor",
-    "active": true
+    "active": true,
+    "phone": "(555) 909-0123",
+    "location": "Scottsdale, AZ"
   },
   {
     "id": 88,
     "name": "Christopher Cross",
     "email": "miranda08@hotmail.com",
     "role": "viewer",
-    "active": true
+    "active": true,
+    "phone": "(555) 010-1234",
+    "location": "North Las Vegas, NV"
   },
   {
     "id": 89,
     "name": "Annette Johnson",
     "email": "megan59@yahoo.com",
     "role": "member",
-    "active": true
+    "active": true,
+    "phone": "(555) 121-2345",
+    "location": "Irving, TX"
   },
   {
     "id": 90,
     "name": "Nicole Duran",
     "email": "garneramanda@hotmail.com",
     "role": "member",
-    "active": true
+    "active": true,
+    "phone": "(555) 232-3456",
+    "location": "Fremont, CA"
   },
   {
     "id": 91,
     "name": "Sheila Evans",
     "email": "jeffrey70@hancock.com",
     "role": "admin",
-    "active": true
+    "active": true,
+    "phone": "(555) 343-4567",
+    "location": "Gilbert, AZ"
   },
   {
     "id": 92,
     "name": "Angela Gutierrez",
     "email": "gracelee@williams-phillips.biz",
     "role": "admin",
-    "active": true
+    "active": true,
+    "phone": "(555) 454-5678",
+    "location": "San Bernardino, CA"
   },
   {
     "id": 93,
     "name": "James Hawkins",
     "email": "flynntiffany@montgomery.com",
     "role": "editor",
-    "active": false
+    "active": false,
+    "phone": "(555) 565-6789",
+    "location": "Boise, ID"
   },
   {
     "id": 94,
     "name": "Edward Perry",
     "email": "amywolf@gmail.com",
     "role": "editor",
-    "active": false
+    "active": false,
+    "phone": "(555) 676-7890",
+    "location": "Birmingham, AL"
   },
   {
     "id": 95,
     "name": "Kevin Rosales",
     "email": "zpatterson@yahoo.com",
     "role": "editor",
-    "active": false
+    "active": false,
+    "phone": "(555) 787-8901",
+    "location": "Spokane, WA"
   },
   {
     "id": 96,
     "name": "Kevin Morales",
     "email": "fevans@yahoo.com",
     "role": "admin",
-    "active": false
+    "active": false,
+    "phone": "(555) 898-9012",
+    "location": "Rochester, NY"
   },
   {
     "id": 97,
     "name": "Anthony Miller",
     "email": "qbrooks@conrad-johnson.com",
     "role": "editor",
-    "active": true
+    "active": true,
+    "phone": "(555) 909-0123",
+    "location": "Des Moines, IA"
   },
   {
     "id": 98,
     "name": "Kayla Mooney",
     "email": "hernandezpatrick@torres-sosa.com",
     "role": "viewer",
-    "active": true
+    "active": true,
+    "phone": "(555) 010-1234",
+    "location": "Modesto, CA"
   },
   {
     "id": 99,
     "name": "Lisa Hampton",
     "email": "jordanabigail@gaines-sanchez.com",
     "role": "viewer",
-    "active": false
+    "active": false,
+    "phone": "(555) 121-2345",
+    "location": "Fayetteville, NC"
   },
   {
     "id": 100,
     "name": "Carrie Gardner DDS",
     "email": "warnerdonald@yahoo.com",
     "role": "editor",
-    "active": false
+    "active": false,
+    "phone": "(555) 232-3456",
+    "location": "Tacoma, WA"
   }
 ]
